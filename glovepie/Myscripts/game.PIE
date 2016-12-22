@@ -1,0 +1,19 @@
+﻿hidepie()
+debug = wiimote1.RawAcc
+keyboard.Space = wiimote1.Plus
+if wiimote1.B then
+keyboard1.up = true
+else
+keyboard1.up = false
+endif
+keyboard.Down = wiimote1.One
+if wiimote1.rawaccx>4 then
+keyboard.Left = 1
+else
+keyboard1.Left = 0
+endif
+if wiimote1.rawaccx<-4 then
+keyboard.Right = 1
+else
+keyboard.Right = 0
+endif

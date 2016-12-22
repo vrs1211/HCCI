@@ -1,0 +1,20 @@
+﻿
+debug=wiimote1.RawAcc
+
+ wiimote2.led1=true
+if (wiimote1.relacc>5) {
+wiimote1.Led2=true
+keyboard.V=true
+} else {
+wiimote1.Led2=false
+keyboard.V=false
+}
+if (wiimote2.RelAccX<-5) {
+wiimote2.led2=true
+keyboard.I=true
+} else {
+wiimote2.Led2=false
+keyboard.I=false
+}
+
+

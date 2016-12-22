@@ -1,0 +1,83 @@
+﻿hidepie()
+debug = wiimote1.rawacc
+
+if wiimote1.B && wiimote1.Minus then
+if var.x=1 then
+hidepie()
+var.x=var.x*-1
+else
+showpie()
+var.x=var.x*-1
+endif
+endif
+//showpie() = wiimote1.B + wiimote1.Minus
+//hidepie()
+//mouse buttons
+mouse.LeftButton = wiimote1.A
+
+mouse.RightButton = wiimote1.B
+mouse.MiddleButton = wiimote1.home
+mouse.WheelUp = wiimote1.Plus
+mouse.WheelDown = wiimote1.Minus
+//keyboard buttons in mouse
+keyboard.Alt+keyboard.F4 = wiimote1.left+wiimote1.SwingUp
+keyboard.Up = wiimote1.Up
+keyboard.Down = wiimote1.Down
+keyboard.Left = wiimote1.Left
+keyboard.Right = wiimote1.Right
+keyboard.Enter = wiimote1.Two
+//MOUSE CURSOR
+
+
+//controlling x axis
+
+//positive x
+
+if wiimote1.rawaccx>1 and wiimote1.RawAccX<3 then
+mouse1.x = mouse.x - 0.002
+endif
+if wiimote1.RawAccX>=3 &&wiimote1.RawAccX<7 then
+mouse1.x = mouse.x - 0.004
+endif
+if wiimote1.RawAccX>=7 && wiimote1.RawAccX<=10 then
+mouse1.x = mouse.x-0.006
+endif
+//negative x
+if wiimote1.RawAccX<-1&&wiimote.RawAccX>-3 then
+mouse1.x = mouse.x + 0.002
+endif
+if wiimote1.RawAccX<=-3 &&wiimote1.RawAccX>-7 then
+mouse1.x = mouse.x + 0.004
+endif
+if wiimote1.RawAccX<=-7 && wiimote1.RawAccX>=-10 then
+mouse1.x = mouse.x +0.006
+endif
+
+
+
+
+//controlling y axis
+
+//positive y
+if wiimote1.RawAccz>1&&wiimote.RawAccz<3 then
+mouse1.y = mouse.y - 0.002
+endif
+if wiimote1.RawAccz>3 && wiimote1.RawAccz<7 then
+mouse1.y = mouse.y - 0.004
+endif
+if wiimote1.RawAccz>7 && wiimote1.RawAccz<10 then
+mouse1.y = mouse.y-0.006
+endif
+
+//negative y
+if wiimote1.RawAccz<-1&&wiimote.RawAccz>-3 then
+mouse1.y = mouse.y + 0.002
+endif
+if wiimote1.RawAccz<=-3 && wiimote1.RawAccz>-7 then
+mouse1.y = mouse.y + 0.004
+endif
+if wiimote1.RawAccz<=-7 && wiimote1.RawAccz>=-10 then
+mouse1.y = mouse.y + 0.006
+endif
+
+

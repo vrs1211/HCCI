@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>VB How-To - Launch Files with their Associated Applications through Visual Basic - Readme</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+<!--
+a:link {  text-decoration: none; color: #6633FF}
+a:active {  text-decoration: none; color: #6633FF}
+a:hover {  text-decoration: underline; color: #6633FF}
+a:visited {  text-decoration: none; color: #6633FF}
+-->
+</style></head>
+
+<body bgcolor="#FFFFFF">
+<div align="center"> 
+  <p><font size="-1"><b><u><b><font color="#0000FF" size="-1" face="Verdana, Arial, Helvetica, sans-serif">How-To... 
+    - Launch Files with their Associated Applications through Visual Basic</font></b></u></b></font></p>
+  <p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="-1">When 
+    using the Shell function through Visual Basic, if you wish to launch, for 
+    example, a .DOC file. You would expect it to open up and load into Wordpad 
+    or Word, but it doesn't. The Shell function can only be used to run EXE, BAT, 
+    COM, etc. To be able to launch other files such as DOC, or TXT, you have to 
+    use the ShellExecute API call. The call is as follows :-</font></p>
+  <p align="left"><code><font color="#0000A0">Private Declare Function ShellExecute 
+    Lib "shell32.dll" Alias "ShellExecuteA" _ <br>
+    (ByVal hwnd As Long, ByVal lpOperation As String, _ <br>
+    ByVal lpFile As String, ByVal lpParameters As String, _ <br>
+    ByVal lpDirectory As String, ByVal nShowCmd As Long) As Long</font></code><font face="Verdana, Arial, Helvetica, sans-serif" size="-1"> 
+    </font></p>
+  <p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="-1">This 
+    &quot;How-To&quot; shows you how you can launch files with their associated 
+    applications.</font></p>
+  <p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="-1"><u>Files 
+    included</u></font></p>
+  <p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="-1">AssocApps.vbp<br>
+    frmAssocApps.frm<br>
+    frmAssocApps.frx<br>
+    Module1.bas<br>
+    Readme.html(this file)<br>
+    VbHowTo.doc(example file)<br>
+    VbHowTo.txt </font><font face="Verdana, Arial, Helvetica, sans-serif" size="-1">(example 
+    file) <br>
+    </font></p>
+  <p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="-1">This 
+    was program and all code was written by myself, David Cowan. It is available 
+    to download at <b><a href="http://freespace.virgin.net/s.cowan/vbhowto/">http://freespace.virgin.net/s.cowan/vbhowto/</a></b> 
+    - a site with everything Visual Basic. </font></p>
+  <p align="left"><font face="Verdana, Arial, Helvetica, sans-serif" size="-1">If 
+    you have any comments, suggestions or questions about this &quot;How-To&quot;, 
+    then please e-mail me at <b><a href="mailto:dodgesoft@hotmail.com">dodgesoft@hotmail.com</a></b></font></p>
+</div>
+</body>
+</html>

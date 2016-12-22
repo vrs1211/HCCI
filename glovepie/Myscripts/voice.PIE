@@ -1,0 +1,28 @@
+﻿
+if said("switch",5) then
+keyboard1.Alt+keyboard1.Tab = true
+keyboard1.Tab = false
+endif
+if said("maximise",5) then
+keyboard1.Alt = false
+keyboard1.Tab = false
+endif
+if said("close",5) then
+keyboard.Alt+keyboard.F4 = true
+keyboard.Alt+keyboard.F4 = false
+endif
+
+if said("minimize",5) then
+keyboard1.Alt = true
+keyboard1.Space = true
+keyboard.N = true
+keyboard1.alt= false
+keyboard1.Space = false
+keyboard1.N = false
+endif
+if said("minimize all",5) then
+keyboard1.Windows+keyboard.M = true
+keyboard1.Windows+keyboard.M = false
+endif
+
+

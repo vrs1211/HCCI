@@ -1,0 +1,25 @@
+﻿//debug = "X: " +wiimote1.PointerX  +" Y: " +wiimote1.PointerY +" CY: "+mouse1.CursorPosY
+debug = wiimote1.dot1y
+var.mousey = mouse.y
+var.ptrx=wiimote1.PointerX
+var.ptry=wiimote1.dot1y
+var.pc = ((((var.ptry/760)*100)*1024)/760)
+var.y = var.ptry+var.pc
+
+
+
+if var.ptry>50 then
+var.ptry = (var.ptry-50)
+endif
+if var.ptry<50 then
+var.ptry = (var.ptry+50)
+endif
+if var.ptry ==0 then
+var.ptry = var.ptry
+endif
+
+
+
+mouse1.x = var.ptrx
+//mouse1.y = var.y
+                         */

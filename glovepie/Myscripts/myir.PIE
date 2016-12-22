@@ -1,0 +1,31 @@
+﻿/*var.x=0
+if(var.x<1) then
+wiimote1.Led1=true
+wait 250ms
+wiimote1.Led1=false
+wiimote1.Led2=true
+wait 250ms
+wiimote1.Led2=false
+wiimote1.Led3=true
+wait 250ms
+wiimote1.Led3=false
+wiimote1.Led4=true
+wait 250ms
+wiimote1.Led4=false
+wiimote1.Led3=true
+wait 250ms
+wiimote1.Led3=false
+wiimote1.Led2=true
+wait 250ms
+wiimote1.Led2=false
+wiimote1.Led1=true
+
+wiimote1.Led1=false
+endif */
+//debug = "x: " +mouse1.CursorPosX +"  y: " +mouse1.CursorPosY +"  ptx: " +wiimote1.PointerX
+
+//var.scrx=screen.Width
+//var.scry=screen.Height
+//screen.MouseTrails = 5
+mouse.x = wiimote1.PointerX
+mouse.y = wiimote1.PointerY
